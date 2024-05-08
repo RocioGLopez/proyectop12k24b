@@ -1,14 +1,14 @@
-//Creado por Diana Mishel Loeiza Ramírez 9959-23-3457 //proceso notas
+//Creado por Diana Mishel Loeiza Ramírez 9959-23-3457 //proceso notas// 
 #include "notas.h" // Incluye el archivo de encabezado "notas.h"
-#include <fstream> // Incluye la biblioteca para manejar archivos
+#include <fstream> // Incluye la biblioteca para manejar archivos  
 #include <iostream> // Incluye la biblioteca estándar de entrada y salida
 #include <cstdlib> // Incluye la biblioteca estándar de C para funciones de sistema
 #include <conio.h> // Incluye la biblioteca para funciones de entrada y salida del sistema en Windows
 
 using namespace std; // Usa el espacio de nombres estándar de C++
 
-// Definición de la clase Nota
-class Nota {
+// Definición de la clase Nota  //
+class Nota { 
 public:
     int codigoEstudiante; // Variable para almacenar el código del estudiante
     string nombreEstudiante; // Variable para almacenar el nombre del estudiante
