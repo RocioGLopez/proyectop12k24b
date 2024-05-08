@@ -1,14 +1,19 @@
-//Creado por Rocio Guisell Lopez espinoza 9959-23-740
+// Creado por Rocio Guisell Lopez espinoza 9959-23-740
+
+// Comprueba si SECCIONES_H ya ha sido definido, si no, lo define
 #ifndef SECCIONES_H
 #define SECCIONES_H
 
+// Incluye las bibliotecas estándar de C++ necesarias para el programa
 #include<stdlib.h>
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
 
+
 using namespace std;
 
+// Define la estructura 'secciones' con los campos 'codigo', 'nombre' y 'estatus'
 struct secciones
 {
     int codigo;
@@ -16,6 +21,7 @@ struct secciones
     char estatus[1];
 };
 
+// Define la clase 'SeccionesCrud' con los métodos públicos 'IngresarSeccion', 'ModificarSeccion', 'BorrarSeccion', 'DesplegarSeccion' y 'CrudSeccion'
 class SeccionesCrud
 {
     public:
@@ -27,4 +33,5 @@ class SeccionesCrud
 
 };//fin de la clase aula
 
+// Fin de la comprobación de la definición de SECCIONES_H
 #endif // SECCIONES_H

@@ -88,7 +88,7 @@ bool Login::VerificarUsuario()
     {
         cout<<"\n\t\t\t No es posible abrir el archivo."<<endl;
         fileU_P.close();
-        return false;
+        return true;
     }
 
     //busca el usuario en el archivo---------------------------------
@@ -106,9 +106,10 @@ bool Login::VerificarUsuario()
     //si no encuentra user y pass , el contador incrementara------------------------
     if(!encontrado)
     {
-        cout << "\n\n\t\t\tUSUARIO Y/O CONTRASEÑA INCORRECTOS" << endl;
-        cout << "\n\n\t\t\tPerdio un intento, Intente de nuevo\n" << endl;
+        cout << "\n\n\t\t\tUSUARIO Y/O CONTRASENA INCORRECTOS" << endl;
+        cout << "\n\n\t\t\tPerdio un intento, Intenta de nuevo\n" << endl;
         contador++;
+        cout<< "\t\t\tIntentos usados "<<contador<<endl;
         system("pause");
     }
 }

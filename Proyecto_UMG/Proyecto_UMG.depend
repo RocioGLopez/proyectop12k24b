@@ -136,3 +136,71 @@
 	<conio.h>
 	<iomanip>
 
+1715118833 source:c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\main.cpp
+	<iostream>
+	<cstdlib>
+	<conio.h>
+	"usuarios.h"
+	"Login.h"
+	"aulas.h"
+	"secciones.h"
+
+1715118833 c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\include\usuarios.h
+	<iostream>
+
+1715118833 c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\include\login.h
+	<iostream>
+	<fstream>
+	<string>
+
+1715118833 c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\include\aulas.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1715134385 c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\include\secciones.h
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1715118833 source:c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\src\aulas.cpp
+	"aulas.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1715124880 source:c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\src\login.cpp
+	"Login.h"
+	<iostream>
+	<fstream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1715131225 source:c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\src\secciones.cpp
+	"secciones.h"
+	<fstream>
+	<iostream>
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+
+1715118833 source:c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\src\seguridad.cpp
+	"seguridad.h"
+
+1715118833 c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\include\seguridad.h
+
+1715118833 source:c:\users\ruddyard\desktop\2024\progra i\sistmaumg_b\proyectop12k24b\proyecto_umg\src\usuarios.cpp
+	"usuarios.h"
+	<fstream>
+	<cstdlib>
+	<conio.h>
+	<iostream>
+
