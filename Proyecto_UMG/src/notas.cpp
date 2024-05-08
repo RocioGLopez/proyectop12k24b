@@ -1,4 +1,4 @@
-//Creado por Diana Mishel Loeiza Ramìrez 9959-23-3457
+//Creado por Diana Mishel Loeiza Ramï¿½rez 9959-23-3457//proceso nota//
 #include "notas.h"
 #include <fstream>
 #include <iostream>
@@ -27,11 +27,11 @@ void NotaCrud::CrudNota() {
         cout << "\t\t\t 2. Modificar Nota" << endl;
         cout << "\t\t\t 3. Borrar Nota" << endl;
         cout << "\t\t\t 4. Desplegar Notas" << endl;
-        cout << "\t\t\t 5. Regresar al Menú Anterior" << endl;
+        cout << "\t\t\t 5. Regresar al Menï¿½ Anterior" << endl;
         cout << "\t\t\t --------------------------------------------" << endl;
-        cout << "\t\t\t |   Opción a escoger:[1|2|3|4|5|]           |" << endl;
+        cout << "\t\t\t |   Opciï¿½n a escoger:[1|2|3|4|5|]           |" << endl;
         cout << "\t\t\t --------------------------------------------" << endl;
-        cout << "\t\t\tIngrese tu Opción: ";
+        cout << "\t\t\tIngrese tu Opciï¿½n: ";
         cin >> opcion;
 
         switch (opcion) {
@@ -50,7 +50,7 @@ void NotaCrud::CrudNota() {
             case 5:
                 break;
             default:
-                cout << "\n\t\t\tOpción inválida. Por favor, prueba otra vez." << endl;
+                cout << "\n\t\t\tOpciï¿½n invï¿½lida. Por favor, prueba otra vez." << endl;
                 cin.ignore();
                 cin.get();
         }
@@ -62,7 +62,7 @@ void NotaCrud::IngresarNota() {
     cout << "\n------------------------------------------------------------------------------------------------------------------------" << endl;
     cout << "\n-------------------------------------------------Agregar Nota--------------------------------------------" << endl;
     Nota nota;
-    cout << "Ingrese el código del estudiante: ";
+    cout << "Ingrese el cï¿½digo del estudiante: ";
     cin >> nota.codigoEstudiante;
     cin.ignore();
 
@@ -84,7 +84,7 @@ void NotaCrud::IngresarNota() {
 
 void NotaCrud::ModificarNota() {
     int codigo;
-    cout << "Ingrese el código del estudiante cuya nota desea modificar: ";
+    cout << "Ingrese el cï¿½digo del estudiante cuya nota desea modificar: ";
     cin >> codigo;
 
     fstream archivo("notas.dat", ios::binary | ios::in | ios::out);
@@ -111,7 +111,7 @@ void NotaCrud::ModificarNota() {
     archivo.close();
 
     if (!encontrada) {
-        cout << "No se encontró la nota del estudiante con el código ingresado." << endl;
+        cout << "No se encontrï¿½ la nota del estudiante con el cï¿½digo ingresado." << endl;
     } else {
         cout << "Nota modificada exitosamente!" << endl;
     }
@@ -119,7 +119,7 @@ void NotaCrud::ModificarNota() {
 
 void NotaCrud::BorrarNota() {
     int codigo;
-    cout << "Ingrese el código del estudiante cuya nota desea eliminar: ";
+    cout << "Ingrese el cï¿½digo del estudiante cuya nota desea eliminar: ";
     cin >> codigo;
 
     ifstream archivo("notas.dat", ios::binary);
@@ -148,7 +148,7 @@ void NotaCrud::BorrarNota() {
     if (eliminada) {
         cout << "Nota eliminada exitosamente!" << endl;
     } else {
-        cout << "No se encontró la nota del estudiante con el código ingresado." << endl;
+        cout << "No se encontrï¿½ la nota del estudiante con el cï¿½digo ingresado." << endl;
     }
 }
 
@@ -163,7 +163,7 @@ void NotaCrud::DesplegarNotas() {
 
     Nota nota;
     while (archivo.read(reinterpret_cast<char*>(&nota), sizeof(Nota))) {
-        cout << "Código del estudiante: " << nota.codigoEstudiante << endl;
+        cout << "Cï¿½digo del estudiante: " << nota.codigoEstudiante << endl;
         cout << "Nombre del estudiante: " << nota.nombreEstudiante << endl;
         cout << "Nombre del curso: " << nota.nombreCurso << endl;
         cout << "Nota: " << nota.nota << endl;
