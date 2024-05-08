@@ -1,5 +1,6 @@
 //Creado por Diana Mishel Loeiza Ramírez 9959-23-3457 //proceso notas// 
 #include "notas.h" // Incluye el archivo de encabezado "notas.h"
+#include "Bitacora.h" // Incluye el archivo de encabezado "Bitacora.h"
 #include <fstream> // Incluye la biblioteca para manejar archivos  
 #include <iostream> // Incluye la biblioteca estándar de entrada y salida
 #include <cstdlib> // Incluye la biblioteca estándar de C para funciones de sistema
@@ -8,13 +9,28 @@
 using namespace std; // Usa el espacio de nombres estándar de C++
 
 // Definición de la clase Nota  //
-class Nota { 
+class Nota {
 public:
     int codigoEstudiante; // Variable para almacenar el código del estudiante
     string nombreEstudiante; // Variable para almacenar el nombre del estudiante
     string nombreCurso; // Variable para almacenar el nombre del curso
     float nota; // Variable para almacenar la nota del estudiante
-};      
+};
+
+// Definición de la clase NotaCrud
+class NotaCrud {
+public:
+    // Funciones miembro
+    void CrudNota();
+    void IngresarNota();
+    void ModificarNota();
+    void BorrarNota();
+    void DesplegarNotas();
+
+private:
+    // Funciones privadas
+    void RegistrarBitacora(string usuario, string accion);
+};
 
 // Definición de la función miembro de la clase NotaCrud
 void NotaCrud::CrudNota() {
@@ -87,6 +103,9 @@ void NotaCrud::IngresarNota() {
     archivo.write(reinterpret_cast<const char*>(&nota), sizeof(Nota));
     archivo.close(); // Cierra el archivo
 
+    // Registra la acción en la bitácora
+    RegistrarBitacora("usuario", "Agregar Nota");
+
     cout << "Nota agregada exitosamente!" << endl; // Muestra un mensaje de éxito
 }
 
@@ -127,6 +146,9 @@ void NotaCrud::ModificarNota() {
     if (!encontrada) {
         cout << "No se encontró la nota del estudiante con el código ingresado." << endl;
     } else {
+        // Registra la acción en la bitácora
+        RegistrarBitacora("usuario", "Modificar Nota");
+
         cout << "Nota modificada exitosamente!" << endl;
     }
 }
@@ -167,6 +189,9 @@ void NotaCrud::BorrarNota() {
 
     // Muestra un mensaje dependiendo del resultado de la operación
     if (eliminada) {
+        // Registra la acción en la bitácora
+        RegistrarBitacora("usuario", "Borrar Nota");
+
         cout << "Nota eliminada exitosamente!" << endl;
     } else {
         cout << "No se encontró la nota del estudiante con el código ingresado." << endl;
@@ -202,3 +227,8 @@ void NotaCrud::DesplegarNotas() {
     cin.get(); // Espera a que el usuario presione Enter
 }
 
+// Definición de la función miembro privada para registrar una acción en la bitácora
+void NotaCrud::RegistrarBitacora(string usuario, string accion) {
+    Bitacora registroBitacora;
+    registroBitacora.Registrar(usuario, "proceso notas", accion);
+}
