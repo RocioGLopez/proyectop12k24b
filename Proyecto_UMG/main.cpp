@@ -6,8 +6,12 @@
 #include <conio.h>
 #include "usuarios.h"
 #include "Login.h"
+<<<<<<< HEAD
 #include "aulas.h"
 #include "secciones.h"
+=======
+#include "Bitacora.h"
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
 
 using namespace std;
 
@@ -17,15 +21,13 @@ void reportes();
 void procesos();
 void ayuda();
 void seguridad();
-
-
+string codigoPrograma="1";
+Bitacora Auditoria;
+string user, contrasena;
 
 int main()
 {
-
-    string user, contrasena;
-
-    // Llamamos al objeto e ingresamos los parametros
+        // Llamamos al objeto e ingresamos los parametros
     Login ingreso(user, contrasena);
 
     // Creamos un bool que verifique y despliegue el metodo VerificarUsuario
@@ -81,6 +83,7 @@ void menuGeneral()
             ayuda();
             break;
         case 6:
+                    Auditoria.ingresoBitacora(user,codigoPrograma,"LGO"); //llamada para registrar la bitacora de seguridad
             exit(0);
         default:
             cout << "\n\t\t\t Opcion invalida...Por favor prueba otra vez..";
@@ -191,5 +194,11 @@ void ayuda()
 
 void seguridad()
 {
+<<<<<<< HEAD
     // Implementaciï¿½n de seguridad
+=======
+    // Implementación de seguridad
+    Bitacora Auditoria;
+    Auditoria.visualizarBitacora();
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
 }

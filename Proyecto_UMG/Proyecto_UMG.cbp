@@ -34,11 +34,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Bitacora.h" />
 		<Unit filename="include/Login.h" />
 		<Unit filename="include/aulas.h" />
 		<Unit filename="include/secciones.h" />
 		<Unit filename="include/usuarios.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Bitacora.cpp" />
 		<Unit filename="src/Login.cpp" />
 		<Unit filename="src/aulas.cpp" />
 		<Unit filename="src/secciones.cpp" />

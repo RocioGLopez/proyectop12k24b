@@ -8,7 +8,9 @@
 #include<cstdlib>
 #include<conio.h>
 #include<iomanip>
+#include "Bitacora.h"
 using namespace std;
+
 
 Login::Login(string usuario, string contrasena)//parametros de la clase
 {
@@ -48,7 +50,7 @@ bool Login::VerificarUsuario()
     {
          system("cls");
     cout <<"\t\t\t+-----------------------------------+"<<endl;
-    cout <<"\t\t\t|       LONGIN CATEDRATICO          |"<<endl;
+    cout <<"\t\t\t|       LOGIN                       |"<<endl;
     cout <<"\t\t\t+-----------------------------------+"<<endl;
     cout <<"\t\t\t|Solo tienes permitido 3 intentos   |"<<endl;
     cout <<"\t\t\t+-----------------------------------+"<<endl;
@@ -90,6 +92,8 @@ bool Login::VerificarUsuario()
         fileU_P.close();
         return false;
     }
+    string codigoPrograma="1000";
+    Bitacora Auditoria;
 
     //busca el usuario en el archivo---------------------------------
     string user,pass;
@@ -97,6 +101,7 @@ bool Login::VerificarUsuario()
     {
         if (user==usuario && pass==contrasena)
         {
+            Auditoria.ingresoBitacora(user,codigoPrograma,"LGI");
             encontrado=true;
             break;
         }

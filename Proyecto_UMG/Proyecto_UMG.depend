@@ -68,12 +68,17 @@
 	<fstream>
 	<string>
 
+<<<<<<< HEAD
 1715116857 source:c:\users\usuario\desktop\rocio\progra 1\proyecto grupal\proyectop12k24b\proyecto_umg\main.cpp
+=======
+1715181873 source:c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\main.cpp
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
 	<iostream>
 	<cstdlib>
 	<conio.h>
 	"usuarios.h"
 	"Login.h"
+<<<<<<< HEAD
 	"aulas.h"
 	"secciones.h"
 
@@ -81,11 +86,23 @@
 	<iostream>
 
 1715054909 c:\users\usuario\desktop\rocio\progra 1\proyecto grupal\proyectop12k24b\proyecto_umg\include\login.h
+=======
+	"Bitacora.h"
+
+1715173906 c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\include\usuarios.h
+	<iostream>
+
+1715173906 c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\include\login.h
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
 	<iostream>
 	<fstream>
 	<string>
 
+<<<<<<< HEAD
 1715054909 source:c:\users\usuario\desktop\rocio\progra 1\proyecto grupal\proyectop12k24b\proyecto_umg\src\login.cpp
+=======
+1715181997 source:c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\src\login.cpp
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
 	"Login.h"
 	<iostream>
 	<fstream>
@@ -93,14 +110,21 @@
 	<cstdlib>
 	<conio.h>
 	<iomanip>
+<<<<<<< HEAD
 
 1715054909 source:c:\users\usuario\desktop\rocio\progra 1\proyecto grupal\proyectop12k24b\proyecto_umg\src\usuarios.cpp
+=======
+	"Bitacora.h"
+
+1715173906 source:c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\src\usuarios.cpp
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
 	"usuarios.h"
 	<fstream>
 	<cstdlib>
 	<conio.h>
 	<iostream>
 
+<<<<<<< HEAD
 1715116053 source:c:\users\usuario\desktop\rocio\progra 1\proyecto grupal\proyectop12k24b\proyecto_umg\src\aulas.cpp
 	"aulas.h"
 	<fstream>
@@ -216,3 +240,17 @@
 	<fstream>
 	<iostream>
 
+=======
+1715177525 c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\include\bitacora.h
+	<iostream>
+
+1715180851 source:c:\users\soporte\documents\profesional\umg\didactica2k24\proyectos\proyectop12k24b\proyecto_umg\src\bitacora.cpp
+	"Bitacora.h"
+	<iostream>
+	<fstream>
+	<conio.h>
+	<ctime>
+	<stdlib.h>
+	<iomanip>
+
+>>>>>>> 5863dc7e6bb74938d3e741cea468fd2394de25a4
