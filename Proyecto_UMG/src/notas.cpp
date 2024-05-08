@@ -1,4 +1,4 @@
-//Creado por Diana Mishel Loeiza Ramírez 9959-23-3457 //notas
+//Creado por Diana Mishel Loeiza Ramírez 9959-23-3457 //proceso notas
 #include "notas.h" // Incluye el archivo de encabezado "notas.h"
 #include <fstream> // Incluye la biblioteca para manejar archivos
 #include <iostream> // Incluye la biblioteca estándar de entrada y salida
