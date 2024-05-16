@@ -20,7 +20,7 @@ void NotaCrud::CrudNota() {
     int opcion; // Variable para almacenar la opción seleccionada por el usuario
 
     // Menú principal de operaciones CRUD
-//bucle do-while de ejecucion 
+//bucle do-while de ejecucion
     do {
         system("cls"); // Limpia la pantalla
         // Mostrar opciones disponibles
@@ -150,7 +150,7 @@ void NotaCrud::BorrarNota() {
     notas nota; // Declarar una variable para almacenar la nota actual
 
     bool eliminada = false; // Bandera para indicar si se eliminó la nota
-    
+
     while (archivo.read(reinterpret_cast<char*>(&nota), sizeof(notas))) { // Leer cada registro de nota del archivo
         if (nota.codigoEstudiante != codigo) { // Si el código del estudiante no coincide con el código ingresado
             archivoTmp.write(reinterpret_cast<const char*>(&nota), sizeof(notas)); // Escribir la nota en el archivo temporal
@@ -158,7 +158,7 @@ void NotaCrud::BorrarNota() {
             eliminada = true; // Actualizar la bandera indicando que se eliminó la nota
         }
     }
-
+//
     archivo.close(); // Cerrar el archivo original
     archivoTmp.close(); // Cerrar el archivo temporal
 
@@ -166,7 +166,7 @@ void NotaCrud::BorrarNota() {
     rename("notas_tmp.dat", "notas.dat"); // Renombrar el archivo temporal como el archivo original
 
     if (eliminada) { // Si la nota fue eliminada
-        Auditoria.ingresoBitacora(user, codigoPrograma, "DNO"); // Registrar la acción de eliminación en la bitácora
+
         cout << "Nota eliminada exitosamente!" << endl; // Mensaje de éxito
     } else {
         cout << "No se encontró la nota del estudiante con el código ingresado." << endl; // Mensaje de error
