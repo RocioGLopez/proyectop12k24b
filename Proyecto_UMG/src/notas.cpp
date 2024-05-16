@@ -200,4 +200,3 @@ void NotaCrud::DesplegarNotas() {
     cin.get(); // Esperar a que el usuario presione Enter para continuar
 }
 
-
