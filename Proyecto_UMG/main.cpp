@@ -8,6 +8,9 @@
 #include "Login.h"
 #include "Bitacora.h"
 
+#include "alumnos.h"
+#include "maestros.h"
+
 using namespace std;
 
 void menuGeneral();
@@ -119,10 +122,16 @@ void catalogos()
         switch (choice)
         {
         case 1:
-            // Implementación para Alumnos
+        {
+            alumnos alumno;
+            alumno.menu();
+        }
             break;
         case 2:
-            // Implementación para Maestros
+        {
+            maestros maestro;
+            maestro.menu();
+        }
             break;
         case 3:
         {

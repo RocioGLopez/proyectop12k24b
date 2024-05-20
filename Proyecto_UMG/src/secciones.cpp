@@ -8,10 +8,19 @@
 #include<conio.h>
 #include<iomanip>
 
+//implementacion de bitacora
+
+#include "Bitacora.h"
 using namespace std;
 // Definici�n de la funci�n CrudSeccion de la clase SeccionesCrud
 void SeccionesCrud::CrudSeccion()
 {
+
+ //implementacion de variables para bitacora
+    string codigoPrograma= "5000";
+    Bitacora Auditoria;
+    string user ="admin";
+
     // Declaraci�n de la variable 'opcion' que almacenar� la opci�n del usuario
     int opcion;
 
@@ -42,18 +51,29 @@ void SeccionesCrud::CrudSeccion()
     case 1:
         // Si la opci�n es 1, llama a la funci�n IngresarSeccion
         IngresarSeccion();
-        break;
+        //registro de bitacora ingreso
+        Auditoria.ingresoBitacora(user,codigoPrograma,"CSE");//CSE = Create Secciones
+
+		break;
     case 2:
         // Si la opci�n es 2, llama a la funci�n ModificarSeccion
         ModificarSeccion();
+        //registro de bitacora Modificar
+        Auditoria.ingresoBitacora(user,codigoPrograma,"USE");//USE = Update Secciones
+
         break;
     case 3:
         // Si la opci�n es 3, llama a la funci�n BorrarSeccion
         BorrarSeccion();
-        break;
+        //registro de bitacora borrar
+        Auditoria.ingresoBitacora(user,codigoPrograma,"DSE");//DSE = Delete Secciones
+
+		break;
     case 4:
         // Si la opci�n es 4, llama a la funci�n DesplegarSeccion
         DesplegarSeccion();
+        //registro de bitacora despliegle
+        Auditoria.ingresoBitacora(user,codigoPrograma,"RSE");//RSE = Read Secciones
         break;
     case 5:
         // Si la opci�n es 5, sale del bucle
